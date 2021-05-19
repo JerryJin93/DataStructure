@@ -8,7 +8,7 @@ int SearchUtils::binarySearch(const int *const data, int size, int toFind) {
     int lo = 0;
     int hi = size - 1;
     while (lo <= hi) {
-        int mid = (int) (lo + (unsigned int) ((hi - lo) >> 1));
+        int mid = lo + ((hi - lo) >> 1);
         int midVal = *(data + mid);
         if (midVal > toFind) {
             hi = mid - 1;

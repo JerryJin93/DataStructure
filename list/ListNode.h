@@ -42,7 +42,6 @@ ListNode<T>::ListNode(): prev(nullptr), next(nullptr) {
 
 template<typename T>
 ListNode<T>::ListNode(const Node(T)&from):data(from->data) {
-    cout << "拷贝";
 }
 
 template<typename T>
